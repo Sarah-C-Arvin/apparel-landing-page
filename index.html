@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -14,12 +15,12 @@
 <body>
   <header>
     <div class="content-wrapper">
-        <img class="logo" src="images/logo.svg" alt="base apparel logo">
+        <img class="logo" src="images/logo.svg" alt="base apparel logo"/>
     </div>
   </header> <!--END HEADER-->
 
   <div class="hero-image">
-    <img class="hero" src="images/hero-mobile.jpg" alt="model posing">
+    <img class="hero" src="images/hero-mobile.jpg" alt="model posing"/>
   </div> <!--END HERO IMAGE-->
 
   <section class="main-content">
@@ -29,12 +30,13 @@
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
         <div class="form">
-          <input type="text" value="Email address"/>
-          <img class="error-icon" src="images/icon-error.svg" alt="error icon">
-          <button class="submit-btn"></button>
+          <input type="email" class="input-email" value="Email address"/>
+          <img class="error-icon" src="images/icon-error.svg" alt="error icon"/>
+          <button class="submit"></button>
         </div> <!--END FORM-->
-        <div class="error-warning">
-          <p class="valid">Please enter a valid email</p>
+        <div class="response">
+          <p class="thank-you">Thank you! We'll be in touch!</p>
+          <p class="error-warning">Please enter a valid email</p>
         </div>
     </div> <!--END FORM DESRIPTION-->
   </section> <!--END MAIN CONTENT-->

@@ -33,7 +33,6 @@ body{
 .hero{
     height:250px;
     width:100%;
-    object-fit:contain;
 }
 
 .main-content{
@@ -79,7 +78,7 @@ p{
 }
 
 
-input[type=text]{
+input[type=email]{
     font-family: 'Josefin Sans', sans-serif;
     color:  hsl(0, 36%, 70%);
     border: none;
@@ -88,7 +87,7 @@ input[type=text]{
     padding-left: 20px;
 }
 
-.submit-btn{
+.submit{
     background: url(images/icon-arrow.svg) no-repeat center;
     background-color:hsl(0, 36%, 70%);
     width: 63px;
@@ -108,13 +107,19 @@ input[type=text]{
 }
 
 
-.error-warning{
+.response{
     display: flex;
     justify-content: flex-start;
 }
 
-.valid{
+.error-warning{
     display: none;
+    padding: 7px 0 0 35px;
+    color: hsl(0, 93%, 68%);
+}
+
+.thank-you{
+    display:none;
     padding: 7px 0 0 35px;
     color: hsl(0, 93%, 68%);
 }
