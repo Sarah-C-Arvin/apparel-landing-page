@@ -1,3 +1,7 @@
+html{
+    font-size: 16px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,11 +9,122 @@
 }
 
 body{
-    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content-wrapper{
+    display: flex;
+    align-items:center;
+    height: 85px;
+}
+
+.logo{
+    width: 150px;
+    padding-left: 25px;
+}
+
+.hero-image{
+    width: 100%;
+}
+
+.hero{
+    height:250px;
+    width:100%;
+    object-fit:contain;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.form-description{
+    width: 350px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 10px;
+    line-height: 35px;
+}
+
+h1 span{
+    font-weight:300;
+    color:  hsl(0, 36%, 70%);
+}
+
+p{
+    padding: 20px 0 35px 0;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 0.875em;
+    color:hsl(0, 36%, 70%);
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    border:1px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    width: 90%;
+    margin-left: 15px;
 }
 
 
+input[type=text]{
+    font-family: 'Josefin Sans', sans-serif;
+    color:  hsl(0, 36%, 70%);
+    border: none;
+    width: 90%;
+    border-radius:50px;
+    padding-left: 20px;
+}
+
+.submit-btn{
+    background: url(images/icon-arrow.svg) no-repeat center;
+    background-color:hsl(0, 36%, 70%);
+    width: 63px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: -1px 1px 15px 7px #f0d8d8;
+    padding-right: 55px;
+}
+
+.error-icon{
+    display: none;
+    height: 23px;
+    width: 23px;
+    margin: 11px 12px 0 12px;
+}
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.error-warning{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.valid{
+    display: none;
+    padding: 7px 0 0 35px;
+    color: hsl(0, 93%, 68%);
+}
+
+.attribution {
+    padding-top: 90px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: black;
+}
